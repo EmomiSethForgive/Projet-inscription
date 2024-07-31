@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecole241</title>
+    <link rel="stylesheet" href="./styles/formulaire.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulaire d'Inscription</h1>
+        <form action="/submit" method="post" id="forms">
+            <!-- Informations Personnelles -->
+            <fieldset>
+                <legend>Informations Personnelles</legend>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="name">Prenom :</label>
+                <input type="text" id="firstname" name="firstname" required>
+
+                <label for="name">âge :</label>
+                <input type="text" id="âge" name="âge" required>
+
+                <label for="name">Sexe :</label>
+                <input type="text" id="Sexe" name="Sexe" required>
+                
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Téléphone :</label>
+                <input type="tel" id="phone" name="phone">
+            </fieldset>
+
+            <!-- Réponse Oui/Non -->
+            <fieldset>
+                <legend>Réponse Oui/Non</legend>
+                <label for="consent-yes">Acceptez-vous de continuer ?</label>
+                <input type="radio" id="consent-yes" name="consent" value="oui" required>
+                <label for="consent-yes">Oui</label>
+                <input type="radio" id="consent_no" name="consent" value="non" required>
+                <label for="consent-no">Non</label>
+            </fieldset>
+
+            <!-- Référentiels -->
+            <fieldset>
+                <legend>Choisissez un Référentiel</legend>
+                <label for="reference">Référentiel :</label>
+                <select id="reference" name="reference" required>
+                    <option value="" disabled selected>Veuillez choisir...</option>
+                    <option value="ref1">Developpeur web</option>
+                    <option value="ref2">Référent digital</option>
+                </select>
+            </fieldset>
+            <!-- Soumettre le Formulaire -->
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</body>
+</html>
+
+     <script src="./js/formulaire.js"></script>
+    
+</body>
+</html>
